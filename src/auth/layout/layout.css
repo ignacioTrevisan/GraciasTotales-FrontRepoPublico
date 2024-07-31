@@ -1,0 +1,107 @@
+.box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#titulo {
+    font-size: 40px;
+}
+
+#subtitulo {
+    font-size: 45px;
+}
+
+.button-form {
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+.button-form div {
+    width: 30%;
+
+}
+
+
+.containerBox {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333333;
+    color: white;
+    margin-top: 40px;
+    width: 600px;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+    height: auto;
+    min-height: 390px;
+
+}
+
+.containerInput {
+
+    margin-top: 20px;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    color: white;
+
+}
+
+
+
+@media (max-width: 600px) {
+    .containerBox {
+        position: relative;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        color: #333333;
+        margin-top: 40px;
+        width: 80%;
+        border-radius: 2%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        height: auto;
+        min-height: 430px;
+
+    }
+}
+
+@media (max-width: 390px) {
+    #titulo {
+        font-size: 30px;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+    .containerBox {
+
+        height: auto;
+        min-height: 470px;
+
+    }
+
+    #subtitulo {
+        font-size: 35px;
+    }
+
+    #titulo {
+        font-size: 20px;
+    }
+
+}

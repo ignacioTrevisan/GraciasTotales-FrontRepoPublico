@@ -1,0 +1,105 @@
+.boxAdmin {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.containerBoxAdmin {
+    position: absolute;
+    top: 150px;
+    color: white;
+    background-color: #333333;
+    border-radius: 2%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 10px;
+    width: 1100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    height: 65%;
+    opacity: 1;
+    transition: opacity 0.6s ease, height 0.6s ease;
+    /* Transiciones de opacidad y altura */
+}
+
+.containerBoxAdmin.collapsed {
+    height: 0;
+    opacity: 0;
+}
+
+
+.generateQRDos {
+    width: 70%;
+    /* Ajusta el ancho según tus necesidades */
+
+    /* Máximo ancho para mantener la responsividad */
+    box-shadow: 0 4px 8px rgba(184, 184, 184, 0.5);
+    margin-top: 20px;
+    text-align: left;
+    height: 150px;
+    border-radius: 5%;
+    font-size: 16px;
+    /* Ajusta el tamaño de fuente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    /* Añadir relleno para hacer el botón más grande */
+    transition: all 0.3s ease;
+    /* Añadir una transición para mejorar la UI */
+}
+
+.generateQRDos i {
+    margin-right: 8px;
+    /* Espaciado entre el ícono y el texto */
+}
+
+@media (max-width: 1100px) {
+    .containerBoxAdmin {
+        width: 600px;
+
+    }
+
+
+}
+
+@media (max-width: 620px) {
+    .containerBoxAdmin {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .containerBoxAdmin button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 410px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 230px) {
+    h1 {
+        font-size: 15px;
+    }
+
+    .containerBoxAdmin button {
+        font-size: 15px;
+        height: 35px;
+        margin-top: 0px;
+    }
+}

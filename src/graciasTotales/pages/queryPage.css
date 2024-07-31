@@ -1,0 +1,138 @@
+.containerQuery {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.userContainer {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    position: relative;
+    height: 80px;
+    color: white;
+    border-radius: 2%;
+    margin-top: 40px;
+    padding-top: 80px;
+    background-color: #333333;
+    transition: width 0.4s ease, height 0.6s ease 0.4s, border-color 0.3s ease, background-color 0.3s ease, padding-right 0.4s ease;
+    overflow: hidden;
+    padding-right: 45px;
+    flex-direction: column;
+}
+
+span {
+    font-size: 20px;
+}
+
+.flexedQuery {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    height: 70%;
+    overflow: auto;
+    width: 60%;
+}
+
+
+
+@media (max-width: 1100px) {
+    .flexedQuery {
+        width: 80%;
+    }
+}
+
+@media (max-width: 830px) {
+
+
+    strong {
+        font-size: 20px;
+
+    }
+}
+
+
+@media (max-width: 600px) {
+
+
+    span {
+        font-size: 12px;
+
+    }
+}
+
+@media (max-width: 450px) {
+
+    #marcarComoReclamado {
+        width: 80%;
+        height: 10%;
+        font-size: 12px;
+    }
+
+    .userContainer {
+        width: 90%;
+    }
+
+    span {
+        font-size: 12px;
+
+    }
+}
+
+@media (max-width: 350px) {
+
+
+    .userContainer {
+        width: 90%;
+    }
+
+    strong {
+        font-size: 18px;
+    }
+
+    span {
+        font-size: 12px;
+
+    }
+}
+
+@media (max-width: 300px) {
+
+    #marcarComoReclamado {
+        width: 80%;
+        height: 10%;
+        font-size: 8px;
+    }
+
+    .userContainer {
+        padding-left: 70px;
+        width: 80%;
+    }
+
+
+
+    strong {
+
+        font-size: 12px;
+    }
+
+    span {
+        font-size: 8px;
+
+    }
+}
+
+
+
+
+
+.animate__animated.animate__fadeIn.uno {
+    --animate-duration: 0.5s;
+}
+
+.animate__animated.animate__fadeIn.dos {
+    --animate-duration: 0.5s;
+}

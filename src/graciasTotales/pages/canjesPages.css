@@ -1,0 +1,259 @@
+#containerCanje {
+    display: flex;
+    overflow-x: hidden;
+    width: 50%;
+    min-width: 50%;
+    scroll-behavior: smooth;
+    position: absolute;
+}
+
+.canjeProduct {
+    min-width: 100%;
+    height: 400px;
+    transform: scale(0);
+    opacity: 0;
+    display: flex;
+    background-color: #333333;
+    border-radius: 2%;
+    flex-direction: row;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.in-view {
+    transform: scale(.9);
+    opacity: 1;
+}
+
+.principal {
+    padding: 5% 3%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.principal img {
+    width: 100%;
+    height: 100%;
+}
+
+.izquierda,
+.derechaC {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    /* Espacio entre las secciones */
+    box-sizing: border-box;
+}
+
+.izquierda {
+    width: 35%;
+    min-width: 35%;
+    position: relative;
+
+    box-sizing: border-box;
+}
+
+.derechaC {
+    margin-left: 2%;
+    width: 60%;
+    min-width: 60%;
+    box-sizing: border-box;
+}
+
+.arriba,
+.abajoDerecha {
+    width: 100%;
+
+}
+
+.arriba {
+    height: 55%;
+    box-sizing: border-box;
+}
+
+.abajoDerecha {
+    height: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.abajoDerecha span {
+    font-size: 18px;
+
+}
+
+.imagenes {
+
+    bottom: 0;
+    max-width: 30%;
+    min-width: 30%;
+
+}
+
+.but {
+    align-self: end;
+    width: 80%;
+    position: absolute;
+    font-size: 14px;
+    bottom: 5%;
+}
+
+.flechas {
+    background-color: rgba(51, 51, 51, 0.3);
+    animation: mostrar 6s infinite ease-in-out;
+    font-size: 190px;
+}
+
+.imagenesChicas {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.izq {
+    justify-content: center;
+}
+
+@keyframes mostrar {
+    0% {
+        background-color: rgba(51, 51, 51, 0.3);
+        color: white;
+    }
+
+    50% {
+
+        background-color: rgba(255, 255, 255, 0.3);
+        color: #333333;
+
+    }
+
+    100% {
+        background-color: rgba(51, 51, 51, 0.3);
+        color: white;
+
+    }
+
+}
+
+@media (max-width: 1200px) {
+    #containerCanje {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .canjeProduct {
+
+        height: 350px;
+    }
+}
+
+@media (max-width: 700px) {
+    .canjeProduct {
+
+        height: 250px;
+    }
+
+    .arriba h1 {
+        font-size: 16px;
+    }
+
+    .arriba h4 {
+        font-size: 12px;
+    }
+
+    .but {
+        width: 60%;
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .but span {
+        font-size: 10px;
+
+    }
+}
+
+@media (max-width: 500px) {
+
+    .arribaizquierda {
+        height: 100%;
+        width: 70%;
+    }
+
+    .izquierda {
+        width: 100%;
+        display: flex;
+        height: 60%;
+
+        flex-direction: row;
+    }
+
+    .izq {
+
+        justify-content: start;
+    }
+
+    .but {
+        align-self: flex-start;
+        position: relative;
+        bottom: 0px;
+    }
+
+    .imagenesChicas {
+        align-items: center;
+        height: 400px;
+        width: 100%;
+        gap: 2%;
+        flex-direction: column;
+    }
+
+    .imagenes img {
+        width: 50px;
+    }
+
+    .principal {
+        flex-direction: column;
+    }
+
+    .canjeProduct {
+        height: 400px;
+        display: column;
+        padding: 3%;
+    }
+
+    .abajoIzquierda {
+        height: 100%;
+        width: 30%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .derechaC {
+        width: 100%;
+    }
+
+    .abajoDerecha {
+        height: 20%;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .arriba {
+        width: 100%;
+
+        height: 30%;
+    }
+
+    .arriba h1 {
+        font-size: 28px
+    }
+}
