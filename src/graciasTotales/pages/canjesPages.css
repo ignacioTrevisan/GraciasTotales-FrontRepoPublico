@@ -43,6 +43,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
     gap: 5%;
     /* Espacio entre las secciones */
     box-sizing: border-box;
@@ -54,6 +55,14 @@
     position: relative;
 
     box-sizing: border-box;
+}
+
+.arribaizquierda {
+    height: 60%;
+}
+
+.abajoIzquierda {
+    min-height: 40%;
 }
 
 .derechaC {
@@ -89,9 +98,7 @@
 
 .imagenes {
 
-    bottom: 0;
-    max-width: 30%;
-    min-width: 30%;
+    width: 40%;
 
 }
 
