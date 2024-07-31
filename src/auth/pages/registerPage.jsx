@@ -49,7 +49,7 @@ export const RegisterPage = () => {
         }
     }
     return (
-        <AuthLayout title='Crear cuentas'>
+        <AuthLayout title='Crear cuenta'>
 
             <div className="containerInput">
                 <form onSubmit={submit}>
