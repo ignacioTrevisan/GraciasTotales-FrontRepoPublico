@@ -46,7 +46,7 @@ export const UseAuthSlice = () => {
         onAuthStateChanged(FireBaseAuth, async (user) => {
             if (!user) return dispatch(logOut());
             let modo = 'cliente';
-            if (user.email === 'nachotizii988@gmail.com' || user.email === 'admin@gmail.com') {
+            if (user.email === 'nachotizii988@gmail.com' || user.email === 'graciasropa@gmail.com') {
                 modo = 'admin'
             }
             dispatch(logIn({
