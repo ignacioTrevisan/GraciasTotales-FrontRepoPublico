@@ -1,8 +1,9 @@
-# React + Vite
+Para que esta aplicación funcione correctamente, es necesario configurar Firebase con tus propias credenciales. Sigue estos pasos:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Crear un proyecto en Firebase 
 
-Currently, two official plugins are available:
+Agregar aplicacion (en configuracion del proyecto)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Obtener las credenciales y remplazarlas en el archivo config.js
+
+Descargar el Api y configurar el entorno local
