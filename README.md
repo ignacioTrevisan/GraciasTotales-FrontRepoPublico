@@ -7,3 +7,7 @@ Agregar aplicacion (en configuracion del proyecto)
 Obtener las credenciales y remplazarlas en el archivo config.js
 
 Descargar el Api y configurar el entorno local
+
+Api:
+
+https://github.com/ignacioTrevisan/GraciasTotales-Backend-RepoPublico
